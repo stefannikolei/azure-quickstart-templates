@@ -170,7 +170,7 @@
               "port": 22
             }
           ],
-          "dnsNameLabel": "[variables('dnsLabelSftp')]"
+          "dnsNameLabel": "[parameters('dnsLabelSftp')]"
         },
         "restartPolicy": "OnFailure",
         "volumes": [
