@@ -27,6 +27,12 @@
         "description": "Name of file share to be created"
       }
     },
+    "dnsLabelSftp":{
+      "type": "string",
+      "metadata":{
+        "descriptions": "Name which should be used for DNS"
+      }
+    },
     "sftpUser": {
       "type": "string",
       "metadata": {
@@ -163,7 +169,8 @@
               "protocol": "TCP",
               "port": 22
             }
-          ]
+          ],
+          "dnsNameLabel": "[variables('dnsLabelSftp')]"
         },
         "restartPolicy": "OnFailure",
         "volumes": [
